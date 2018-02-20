@@ -6,7 +6,10 @@
  *
  **/
 
-
+function getMinimum(a,b,c,d) {
+	let numbers=[a,b,c,d] 
+	return Math.min(...numbers);
+}
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 
 

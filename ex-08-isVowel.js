@@ -5,7 +5,11 @@
  * whether a character is a vowel or not.
  *
  **/
+function isVowel(vowel) {
+	let vowels=["a","e","i","o","u","y","A","E","I","O","U"];
+	return vowels.indexOf(vowel) >= 0;
 
+}
 
 
 

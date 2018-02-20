@@ -7,6 +7,21 @@
  *
  **/
 
+function justOneString(a, b){
+	let typeA = typeof a;
+	let typeB = typeof b;
+
+	if(typeA === "string" && typeB == "string"){
+		return false;
+	}else{
+		if(typeA === "string" || typeB == "string"){
+			return true;
+		}else{
+			return false;
+		}
+	}
+
+}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 

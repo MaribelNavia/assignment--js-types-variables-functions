@@ -7,7 +7,12 @@
  *
  **/
 
-
+function makeGreeting(username){
+	//if (username !== "Nico")
+		return "Hello " + username; 
+	//else 
+		//return "Hello " ;
+}
 
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*

@@ -17,7 +17,13 @@
  *
  * NOTE: Don't forget the comma and space and ending puctuation when building the string.
  **/
-
+function makeUserGreeting(username, again) {
+	if (again){
+		return "Good to see you again, " + username + ".";
+	} else {
+		return "Welcome, " + username + "!";
+	} 
+}
 
 
 

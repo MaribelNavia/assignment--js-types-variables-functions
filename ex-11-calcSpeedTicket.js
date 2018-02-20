@@ -31,13 +31,24 @@
  *
  **/
 
-
-
+function calcSpeedTicket(limit, speed, protectedArea){
+	let mult = protectedArea ? 2 : 1;
+	if(speed > limit){
+		let ticket = speed - limit;
+		if(ticket >= 20){
+			return 250 * mult;
+		}else{
+			return 150 * mult;
+		}
+	}else{
+		return 0;
+	}
+}
 
 //*-*~*~*~*~*~ Don't Touch *~*~*~*~*~*~*~*
 
 console.assert( calcSpeedTicket(25, 40, false) === 150  )
-console.assert( calcSpeedTicket(65, 72, true) === 150  )
+console.assert( calcSpeedTicket(65, 72, true) === 150  ) // ???
 console.assert( calcSpeedTicket(75, 97, false) === 250 )
 console.assert( calcSpeedTicket(55, 83, true) === 500  )
 
